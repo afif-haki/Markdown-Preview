@@ -36,6 +36,11 @@ There's also [links](https://www.freecodecamp.com), and
         - That look like this.
 `;
 
+marked.use({
+  breaks: true
+});
+
+
 function App() {
   const [markdownText, setMarkdownText] = useState<string>(defaultMarkdown);
 
